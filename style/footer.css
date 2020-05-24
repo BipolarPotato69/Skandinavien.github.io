@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.scootfoot{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  margin-top: 10px;
+}
+.main-content-foot{
+  display: flex;
+}
+.main-content-foot .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content-foot{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content-foot:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content-foot:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #24aabf;
+  top: -10px;
+}
+.left .content-foot p{
+  text-align: justify;
+  font-weight: 600;
+}
+.left .content-foot .social-foot{
+  margin: 20px 0 0 0;
+}
+.left .content-foot .social-foot a{
+  padding: 0 2px;
+}
+.left .content-foot .social-foot a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color:white;
+}
+.left .content-foot .social-foot a span:hover{
+  background: #24aabf;
+
+}
+.center .content-foot .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content-foot .fas:hover{
+  background: #24aabf;
+  
+}
+.center .content-foot .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+  font-weight: 600;
+}
+.center .content-foot .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+  
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+  color: white;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #30e3ff;
+
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn .buttonsub{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #2cd7f2;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.right form .btn .buttonsub:hover{
+  
+  transform: scale(1.02);
+  background-color:#24aabf;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+  color: #30e3ff;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #30e3ff;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content-foot{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content-foot .box{
+    margin: 5px 0;
+  }
+}
+textarea{
+
+}
