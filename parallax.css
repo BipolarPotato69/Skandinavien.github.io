@@ -1,0 +1,74 @@
+.parallbody{
+	margin:0;
+	padding:0;
+	outline: none;
+	box-sizing: border-box;
+	font-family:sans-serif; 
+}
+.parallsection{
+	position: relative;
+	width: 100%;
+	min-height: 90vh;
+	display: flex;
+	justify-content:center;
+	align-items: center;	
+}
+
+.parallsection .content{
+	text-align: center;
+}
+
+.parallsection .content .parallh2{
+	font-size: 19vw;
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 1em;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	background-attachment: fixed;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+
+.parallsection:nth-child(1) .content .parallh2{
+	background-image:url(../img/summer.jpg);
+}
+
+.parallsection:nth-child(2) .content .parallh2{
+	background-image:url(../img/autumn.jpg);
+}
+
+.parallsection:nth-child(3) .content .parallh2{
+	background-image:url(../img/winter.jpg);
+}
+
+.parallsection:nth-child(4) .content .parallh2{
+	background-image:url(../img/spring.jpg);
+}
+
+.parallsection .content p{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0px 20px;
+	line-height: 1.5rem;
+  	letter-spacing: 1px;
+  	color: #524747;
+  	font-weight: 600;
+}
+
+.parallsection .content .readmore{
+	display: inline-block;
+	padding: 10px 20px;
+	border:2px solid #000;
+	text-decoration: none;
+	color: #524747;
+	margin-top: 20px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: ease-out 0.5s;
+}
+
+.parallsection .content .readmore:hover{
+transform: scale(1.1);
+background: #f5f5f5;
+}

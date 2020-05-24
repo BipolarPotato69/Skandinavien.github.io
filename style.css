@@ -1,0 +1,295 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+
+}
+
+.parallax {
+  position:relative;
+  background-image: url(../img/50195.jpg);
+  height:500px; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+header:after {
+  content: '';
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 2;
+  
+}
+.inner{
+  position: relative;
+  top:300px;
+  z-index: 3;
+  color: #fff;
+  text-align: right;
+  padding: 50px; 
+}
+.inner .mainh1{
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 5px;
+}
+.inner .bottomtxt{
+	font-size: 18px;
+
+}
+
+content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 70vh;
+}
+
+.container {
+	position:relative;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	width:1500px;
+	transform-style: preserve-3d;
+	margin-top: 120px;
+}
+.container .box {
+	position: relative;
+	width:420px;
+	height: 550px;
+	margin:20px 0;
+	perspective: 1000px;
+	overflow: hidden;
+	transform-style: preserve-3d;
+}
+.container .box .imgBx {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	transform-origin: top;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	transition-delay:0.2s;
+}
+.container .box:hover .imgBx {
+	transform:rotateX(-90deg);
+	opacity:0;
+	transition-delay:0s;
+}
+.container .box .imgBx img{
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	object-position:center;
+
+}
+.container .box .contentBx {
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#333;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	transform-origin: bottom;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	transform:rotateX(90deg);
+	opacity: 0;
+	color: #fff;
+}
+.container .box:hover .contentBx {
+	transform:rotateX(0deg);
+	opacity:1;
+	transition-delay:0.2s;
+}
+
+.stayhome{
+	position:relative;
+	top:65px;
+}
+.servh1{
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.servh1 span{
+  text-transform: uppercase;
+  display: block;
+}
+.text1{
+  color: black;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+  background:white;
+  position: relative;
+  animation: text 3s 1;
+}
+.text2{
+  font-size: 20px;
+  color: #13C0C7;
+  font-weight: 520;
+}
+
+@keyframes text {
+  0%{
+    color: white;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+.sliderh1{
+  text-align: center;
+  margin-top: 35px;
+  color: black;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.tourtitle{
+  color: white;
+}
+.gridh1{
+  text-align: center;
+  margin-top:20px;
+  padding-top: 20px; 
+  color: black;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  background-color: #30e3ff;
+  color:white;
+  position: relative;
+  top: 70px; 
+  z-index: 2;
+  
+  
+}
+
+.revbody{
+  position: relative;
+  top: 12px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.rev-section{
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+  margin-top: 35px;
+  color: black;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+
+.reviews{
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.review{
+  margin: 0 1rem;
+  min-width: 300px;
+  flex: 1;
+}
+
+.head-review{
+  margin: 1.75rem auto;
+  width: 150px;
+  height: 150px;
+}
+.reviews-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+}
+
+.body-review{
+  background-color: rgb(238, 238, 238);
+  padding: 2.5rem;
+  box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+}
+
+.body-review:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+.name-review{
+  font-size: 1.5rem;
+  color: rgb(50, 50, 50);
+  margin-bottom: .25rem;
+}
+.place-review{
+  font-style: italic;
+  font-weight: 600;
+}
+.rating{
+  color: rgb(253, 180, 42);
+  margin: 1rem 0;
+  display: inline-flex;
+}
+
+.desc-review{
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  color: rgb(150, 150, 150);
+}
+
+#more {display: none;}
+#more2{display: none;}
+#more3{display: none;}
+
+@media (max-width: 678px){
+  .review{
+    margin-top: 1.5rem;
+  }
+}
+
+#mappap{
+  color:white;
+}
