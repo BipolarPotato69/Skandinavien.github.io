@@ -1,0 +1,106 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+  .item:hover {
+    flex: 7;
+  }
+
+
+.item-1 {
+  background-image: url(../img/palette1.jpg);
+}
+
+.item-2 {
+  background-image: url(../img/palette2.jpg);
+}
+
+.item-3 {
+  background-image: url(../img/palette3.jpg);
+}
+
+.item-4 {
+  background-image: url(../img/palette4.jpg);
+}
+
+.item-5 {
+  background-image: url(../img/palette5.jpg);
+}
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+}
+.social1 img {
+  display: block;
+  width: 32px;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.navli {
+  float:right;
+}
+
+.navli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all .2s ease-in-out;
+  font-family: sans-serif;
+}
+
+.navli a:hover{
+  transform: scale(1.1);
+}
